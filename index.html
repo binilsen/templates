@@ -30,7 +30,7 @@
             <li class="nav-item">
               <a href="#" class="nav-link">Services</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-item">
               <a href="./bs-pricing.html" class="nav-link">Pricing</a>
             </li>
@@ -153,7 +153,7 @@
         </div>
       </div>
     </div>
-    <div class="about bg-light p-5 my-4">
+    <div class="about bg-light p-5 my-4" id="about">
       <h1 class="shadow p-3 fw-light">About</h1>
       <div class="card">
         <div class="card-body">
@@ -191,12 +191,14 @@
   </footer>
   <script>
     const toggle = document.querySelector('#mode');
+    const header = document.querySelector('header');
     toggle.addEventListener('click', function () {
       if (this.checked) {
-        document.querySelector('header').style.backgroundColor = '#333'
+        header.style.backgroundColor = '#333'
         return document.body.style.background = '#f1f1f1';
       }
       document.body.style.background = '';
+      header.style.background = '';
     })
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
