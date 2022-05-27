@@ -1,138 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Template" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-sm bg-transparent navbar-dark">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">LOGO</a>
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="myNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="myNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="./bs-pricing.html" class="nav-link">Pricing</a></li>
-              <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="my-4 bg-light p-5 rounded-3 shadow row">
-        <div class="col-sm-4 my-5 my-md-0">
-          <div class="content bg-light border rounded border-danger">
-            <div class="p-4 h-100">
-              <p class="fs-3">Lorem ipsum dolor sit.</p>
-              <button class="btn btn-footer btn-primary rounded-pill">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-5 my-md-0">
-          <div class="content bg-light border rounded border-danger">
-            <div class="p-4">
-              <p class="fs-3">Lorem ipsum dolor sit.</p>
-              <button class="btn btn-footer btn-primary rounded-pill">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-5 my-md-0">
-          <div class="content bg-light border rounded border-danger">
-            <div class="p-4">
-              <p class="fs-3">Lorem ipsum dolor sit.</p>
-              <button class="btn btn-footer btn-primary rounded-pill">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="services">
-        <div class="row bg-light py-2 rounded shadow">
-          <div class="col-sm-3">
-            <a href="#">
-              <div class="card bg-primary h-100 text-white">
-                <div class="card-body">
-                  <p class="card-title fs-1 text-decoration-none text-center">
-                    Java
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="#">
-              <div class="card bg-danger h-100 text-white">
-                <div class="card-body">
-                  <p class="card-title fs-1 text-center">Ruby</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="#">
-              <div class="card bg-info h-100 text-white">
-                <div class="card-body">
-                  <p class="card-title fs-1 text-decoration-none text-center">
-                    Php
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="#">
-              <div class="card bg-primary h-100 text-white">
-                <div class="card-body">
-                  <p class="card-title fs-1 text-decoration-none text-center">
-                    Python
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="about bg-info text-white px-2 mt-4">
-        <h1 class="shadow">About</h1>
-        <p class="lead">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-          recusandae esse maxime excepturi doloribus ratione suscipit modi
-          nihil, iure voluptatum eaque, tenetur temporibus dolorum sequi
-          eligendi amet in aspernatur voluptas. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Culpa, numquam.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Template" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Frontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar p-3 navbar-expand-sm bg-transparent navbar-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand fs-3">ACS</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="myNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="./bs-pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="my-4 bg-light p-5 rounded-3 shadow row">
+      <div class="col-sm-4 my-5 my-md-0">
+        <div class="content bg-light border rounded border-danger">
+          <div class="p-4 h-100">
+            <p class="fs-3">Lorem ipsum dolor sit.</p>
+            <button class="btn btn-footer btn-primary rounded-pill">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 my-5 my-md-0">
+        <div class="content bg-light border rounded border-danger">
+          <div class="p-4">
+            <p class="fs-3">Lorem ipsum dolor sit.</p>
+            <button class="btn btn-footer btn-primary rounded-pill">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 my-5 my-md-0">
+        <div class="content bg-light border rounded border-danger">
+          <div class="p-4">
+            <p class="fs-3">Lorem ipsum dolor sit.</p>
+            <button class="btn btn-footer btn-primary rounded-pill">
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-  </body>
+    <div class="services">
+      <div class="row bg-light p-2 rounded shadow">
+        <div class="col-sm-3">
+          <a href="#">
+            <div class="card h-100 text-white">
+              <div class="card-body">
+                <p class="card-title p-2 text-decoration-none text-center">
+                  <i class="devicon-java-plain-wordmark colored fs-1 "></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#">
+            <div class="card h-100 text-white">
+              <div class="card-body">
+                <p class="card-title p-2 text-center">
+                  <i class="devicon-ruby-plain-wordmark fs-1 colored"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#">
+            <div class="card h-100 text-white">
+              <div class="card-body">
+                <p class="card-title p-2 text-decoration-none text-center">
+                  <i class="devicon-php-plain colored fs-1"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#">
+            <div class="card  h-100 text-white">
+              <div class="card-body">
+                <p class="card-title p-2   text-decoration-none text-center">
+                  <i class="devicon-python-plain-wordmark text-primary colored fs-1"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary p-3 rounded my-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="https://picsum.photos/400" class="img-fluid rounded-circle" alt="" />
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex h-100 flex-column justify-content-center px-3">
+            <p class="fs-4 bg-light rounded shadow">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              eius.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-dark" />
+
+      <div class="row my-3">
+        <div class="col-sm-6">
+          <div class="d-flex h-100 flex-column justify-content-center px-3">
+            <p class="fs-4 bg-light rounded shadow">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              eius.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 text-end">
+          <img src="https://picsum.photos/400" class="img-fluid rounded-circle" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="about bg-light p-5 my-4">
+      <h1 class="shadow p-3 fw-light">About</h1>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">XYZ Hosting</h5>
+          <div class="card-text">
+            <p class="lead mb-0">ACS Tower</p>
+            <p class="lead">India</p>
+            <a href="mailto:xyz@gmail.com" class="card-link text-decoration-none">Mail us</a>
+            <a href="tel:123232232" class="card-link text-decoration-none">Call us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="p-5 bg-secondary text-white ">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Social Media</h4>
+        <nav class="navbar navbar-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Facebook</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Twitter</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Google</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Discord</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-check form-switch fs-4 float-end">
+          <input type="checkbox" id="mode" class="form-check-input" role="switch">
+          <label for="mode" class="form-check-label">Light Mode</label>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('#mode');
+    toggle.addEventListener('click', function () {
+      if (this.checked) {
+        document.querySelector('header').style.backgroundColor = '#333'
+        return document.body.style.background = '#f1f1f1';
+      }
+      document.body.style.background = '';
+    })
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>
